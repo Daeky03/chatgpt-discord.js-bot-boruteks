@@ -6,6 +6,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 const chatGPTApiKey = 'API KEY';
 
 const { Configuration, OpenAIApi } = require("openai");
+// Çalıştırmadan Önce Konsola npm i discord.js@13.15.1 node-fetch@2.6.7 openai komutunu yazın bu gerekli modülleri indirecektir indirildikten sonra node index.js yazıp botunuzu başlatabilirsiniz
 
 const configuration = new Configuration({
   apiKey: chatGPTApiKey,
