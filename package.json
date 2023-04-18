@@ -1,0 +1,13 @@
+{
+  "name": "discord-chatbot",
+  "version": "1.0.0",
+  "description": "A Discord chatbot that uses ChatGPT API to generate responses and remembers previous conversations.",
+  "main": "app.js",
+  "dependencies": {
+    "node-fetch": "2.6.6",
+      "openai": "3.2.1",
+    "discord.js": "^13.15.1"
+    
+   
+  }
+}
