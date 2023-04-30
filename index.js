@@ -21,8 +21,9 @@ client.once('ready', () => {
 client.on('messageCreate', async message => {
   if (message.author.bot) return;
     const args = message.content.split(" ");
-  const msg = message.content.toLowerCase();
-    if(!msg.startsWith(`<@${client.user.id}>`)) return; // Bu Kod Boruteks Yazılmamışsa veya Etiketlenmemiş ise Hiç Birşey Yapmamasını Sağlar 
+  
+    if(message.content.startsWith(`<@${client.user.id}>`)) {
+ // Bu Kod Boruteks Yazılmamışsa veya Etiketlenmemiş ise Hiç Birşey Yapmamasını Sağlar 
  const mesaj = message.content.replace(args[0], "")
  
  
@@ -43,7 +44,7 @@ client.on('messageCreate', async message => {
 }
  
     
-
+}
   
 });
 
