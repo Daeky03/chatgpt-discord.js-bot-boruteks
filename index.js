@@ -22,7 +22,7 @@ client.on('messageCreate', async message => {
   if (message.author.bot) return;
     const args = message.content.split(" ");
   const msg = message.content.toLowerCase();
-    if(!msg.startsWith(client.user) || !msg.startsWith("boruteks")) return; // Bu Kod Boruteks Yazılmamışsa veya Etiketlenmemiş ise Hiç Birşey Yapmamasını Sağlar 
+    if(!msg.startsWith(`<@${client.user.id}>`)) return; // Bu Kod Boruteks Yazılmamışsa veya Etiketlenmemiş ise Hiç Birşey Yapmamasını Sağlar 
  const mesaj = message.content.replace(args[0], "")
  
  
